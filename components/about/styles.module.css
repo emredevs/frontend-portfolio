@@ -1,0 +1,10 @@
+.aboutContainer{
+    width: 40%;
+    margin: 20px auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    gap: 10px;
+}

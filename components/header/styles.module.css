@@ -1,0 +1,17 @@
+.headerContainer{
+    width: 100%;
+    padding: 20px 15px 20px 25px;
+    font-weight: bold;
+    color: white;
+    background: radial-gradient(circle at 24.1% 68.8%, rgb(50, 50, 50) 0%, rgb(0, 0, 0) 99.4%);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.headerLink{
+    width: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.headerLink>a:hover,.headerLink>a:focus{color:rgb(255, 200, 124)}
