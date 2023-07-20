@@ -11,7 +11,7 @@ export default function Header() {
         <Link href={"/"}>Home</Link>
         <Link href={"/about"}>About</Link>
         <Link href={"/projects"}>Projects</Link>
-        <Link href={"mailto:jp.emreer@gmail.com"}> Gmail Contact</Link>
+        <Link href={"mailto:jp.emreer@gmail.com"}> GmailContact</Link>
       </div>
     </div>
   );

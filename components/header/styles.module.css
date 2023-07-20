@@ -15,3 +15,9 @@
     justify-content: space-around;
 }
 .headerLink>a:hover,.headerLink>a:focus{color:rgb(255, 200, 124)}
+
+@media (max-width:768px){
+.headerLink{
+    width: 90%;
+}
+}
