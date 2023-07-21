@@ -1,13 +1,14 @@
 "use client";
 import React, { useEffect, useState } from "react";
 import { UserType } from "@/types/user-info/type";
+import Link from "next/link";
 import axios from "axios";
 import styles from "./styles.module.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
-import Link from "next/link";
+import SimCardDownloadIcon from "@mui/icons-material/SimCardDownload";
 export default function HomeComponents() {
   const [user, setUser] = useState<UserType>();
   useEffect(() => {
@@ -63,6 +64,12 @@ export default function HomeComponents() {
             }
             style={{ cursor: "pointer", fontSize: "xx-large" }}
           /> */}
+        </div>
+        <div className={styles.cvLink}>
+          <Link href={"img/cv.pdf"} target="_blank" download={"EmreErCv.pdf"}>
+            My Cv
+            <SimCardDownloadIcon />
+          </Link>
         </div>
       </div>
     </div>

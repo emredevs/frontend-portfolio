@@ -10,11 +10,12 @@ import RemoveRedEyeIcon from "@mui/icons-material/RemoveRedEye";
 import CodeIcon from "@mui/icons-material/Code";
 export default function ProjectsComponents() {
   const [repo, setRepo] = useState<Repo[]>([]);
+  const [more, setMore] = useState<number>(9);
   useEffect(() => {
     axios
       .get<RepoType>("https://api.github.com/users/emredevs/repos")
-      .then((res) => setRepo(res.data));
-  }, []);
+      .then((res) => setRepo(res.data.slice(0, more)));
+  }, [more]);
   return (
     <div className={styles.userRepo}>
       {repo.map((repo) => (
@@ -41,6 +42,12 @@ export default function ProjectsComponents() {
           </div>
         </div>
       ))}
+      <button
+        className={styles.moreBtn}
+        onClick={() => setMore((prev) => prev + 5)}
+      >
+        More
+      </button>
     </div>
   );
 }
