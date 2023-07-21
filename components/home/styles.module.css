@@ -39,7 +39,7 @@
   transform: scale(1.25);
 }
 .socialIcon > a:first-child:hover {
-  color: #25d366;
+  color: #1DA1F2;
 }
 .socialIcon > a:nth-child(2):hover {
   color: rgb(202, 40, 140);

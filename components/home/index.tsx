@@ -7,9 +7,9 @@ import styles from "./styles.module.css";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 import WavingHandIcon from "@mui/icons-material/WavingHand";
 import SimCardDownloadIcon from "@mui/icons-material/SimCardDownload";
+import TwitterIcon from "@mui/icons-material/Twitter";
 export default function HomeComponents() {
   const [user, setUser] = useState<UserType>();
   useEffect(() => {
@@ -20,7 +20,7 @@ export default function HomeComponents() {
   // const socialRouter = (info: string) => {
   //   window.open(info, "_blank");
   // };
-  const myTel = process.env.tel;
+
   return (
     <div className={styles.homeComponent}>
       <div>
@@ -33,8 +33,8 @@ export default function HomeComponents() {
         </div>
         <div>Frontend Developer</div>
         <div className={styles.socialIcon}>
-          <Link href={`https://wa.me/${myTel}`} target="_blank">
-            <WhatsAppIcon style={{ fontSize: "xx-large" }} />
+          <Link href={"https://twitter.com/emredevs"} target="_blank">
+            <TwitterIcon style={{ fontSize: "xx-large" }} />
           </Link>
           <Link href={"https://www.instagram.com/emreer.0/"} target="_blank">
             <InstagramIcon style={{ fontSize: "xx-large" }} />
