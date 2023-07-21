@@ -20,6 +20,7 @@ export default function HomeComponents() {
   // const socialRouter = (info: string) => {
   //   window.open(info, "_blank");
   // };
+  const myTel = process.env.tel;
   return (
     <div className={styles.homeComponent}>
       <div>
@@ -32,7 +33,7 @@ export default function HomeComponents() {
         </div>
         <div>Frontend Developer</div>
         <div className={styles.socialIcon}>
-          <Link href={"https://wa.me/05445123306"} target="_blank">
+          <Link href={`https://wa.me/${myTel}`} target="_blank">
             <WhatsAppIcon style={{ fontSize: "xx-large" }} />
           </Link>
           <Link href={"https://www.instagram.com/emreer.0/"} target="_blank">
