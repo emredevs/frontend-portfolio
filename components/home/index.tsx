@@ -8,6 +8,7 @@ import GitHubIcon from "@mui/icons-material/GitHub";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import InstagramIcon from "@mui/icons-material/Instagram";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+import WavingHandIcon from "@mui/icons-material/WavingHand";
 import SimCardDownloadIcon from "@mui/icons-material/SimCardDownload";
 export default function HomeComponents() {
   const [user, setUser] = useState<UserType>();
@@ -26,7 +27,8 @@ export default function HomeComponents() {
       </div>
       <div>
         <div>
-          HI THERE ! I'M <b>{user?.name}</b>
+          HI THERE ! I'M <b>{user?.name} </b>
+          <WavingHandIcon />
         </div>
         <div>Frontend Developer</div>
         <div className={styles.socialIcon}>
